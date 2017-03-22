@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="q9p-3n-hK8">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Collection View Controller-->
+        <scene sceneID="8zQ-jp-zXp">
+            <objects>
+                <viewController id="oy9-0W-z64" customClass="CollectionViewController" customModule="PopularNames" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g0c-Ad-GAL"/>
+                        <viewControllerLayoutGuide type="bottom" id="3WC-mG-5QP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jao-cH-9xe">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5SL-QQ-krC">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="97F-In-T6V">
+                                    <size key="itemSize" width="320" height="400"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="igV-aB-S5z" customClass="PersonCollectionViewCell" customModule="PopularNames" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="320" height="400"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vLM-wr-iqN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="200" id="rmM-Gb-jfQ"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="William Henry Gates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZ9-I7-2lG">
+                                                    <rect key="frame" x="8" y="208" width="304" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="BaU-xA-txc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbZ-8i-s4H">
+                                                    <rect key="frame" x="8" y="229" width="66" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="P6b-9J-uxC"/>
+                                                        <constraint firstAttribute="width" constant="66" id="jpN-0x-HI5"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27/05/1969" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oh5-sM-vop">
+                                                    <rect key="frame" x="78" y="229" width="234" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="g1S-3f-20P"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOa-t4-3jB">
+                                                    <rect key="frame" x="8" y="254" width="304" height="146"/>
+                                                    <string key="text">William Henry Gates III is an American business magnate, investor, author, and philanthropist. In 1975, Gates and Paul Allen co-founded Microsoft, which became the world's largest PC software company.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="vLM-wr-iqN" secondAttribute="trailing" id="2t6-pV-X6t"/>
+                                            <constraint firstItem="dZ9-I7-2lG" firstAttribute="top" secondItem="vLM-wr-iqN" secondAttribute="bottom" constant="8" id="GGl-TM-Fms"/>
+                                            <constraint firstItem="GOa-t4-3jB" firstAttribute="leading" secondItem="igV-aB-S5z" secondAttribute="leading" constant="8" id="I3N-kj-zKx"/>
+                                            <constraint firstItem="Oh5-sM-vop" firstAttribute="leading" secondItem="DbZ-8i-s4H" secondAttribute="trailing" constant="4" id="NoR-I8-Sjx"/>
+                                            <constraint firstAttribute="bottom" secondItem="GOa-t4-3jB" secondAttribute="bottom" id="OPJ-Bi-tzg"/>
+                                            <constraint firstItem="Oh5-sM-vop" firstAttribute="top" secondItem="dZ9-I7-2lG" secondAttribute="bottom" id="RVH-GJ-RO9"/>
+                                            <constraint firstItem="vLM-wr-iqN" firstAttribute="leading" secondItem="igV-aB-S5z" secondAttribute="leading" id="U7p-me-gkh"/>
+                                            <constraint firstItem="dZ9-I7-2lG" firstAttribute="trailing" secondItem="igV-aB-S5z" secondAttribute="trailingMargin" id="Yob-Dt-snI"/>
+                                            <constraint firstItem="vLM-wr-iqN" firstAttribute="top" secondItem="igV-aB-S5z" secondAttribute="top" id="b9b-Rg-Bfv"/>
+                                            <constraint firstItem="DbZ-8i-s4H" firstAttribute="top" secondItem="dZ9-I7-2lG" secondAttribute="bottom" id="fol-3C-xhz"/>
+                                            <constraint firstAttribute="trailing" secondItem="GOa-t4-3jB" secondAttribute="trailing" constant="8" id="gcn-cH-Sez"/>
+                                            <constraint firstItem="DbZ-8i-s4H" firstAttribute="leading" secondItem="igV-aB-S5z" secondAttribute="leadingMargin" id="glY-5I-sLc"/>
+                                            <constraint firstItem="Oh5-sM-vop" firstAttribute="trailing" secondItem="igV-aB-S5z" secondAttribute="trailingMargin" id="oL9-jf-EII"/>
+                                            <constraint firstItem="GOa-t4-3jB" firstAttribute="top" secondItem="Oh5-sM-vop" secondAttribute="bottom" constant="8" id="pVm-OD-hlF"/>
+                                            <constraint firstItem="dZ9-I7-2lG" firstAttribute="leading" secondItem="igV-aB-S5z" secondAttribute="leadingMargin" id="sHu-r0-9Ig"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="bioLabel" destination="GOa-t4-3jB" id="hY9-cB-or9"/>
+                                            <outlet property="birthdayLabel" destination="Oh5-sM-vop" id="lFw-tg-bzf"/>
+                                            <outlet property="nameLabel" destination="dZ9-I7-2lG" id="Omu-OI-no2"/>
+                                            <outlet property="photoImageView" destination="vLM-wr-iqN" id="rdK-E4-q1O"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell1" id="euR-H6-2s2" customClass="PersonCollectionViewCell" customModule="PopularNames" customModuleProvider="target">
+                                        <rect key="frame" x="438" y="10" width="320" height="400"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T2V-03-vae">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="200" id="VwA-5I-2h5"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="William Henry Gates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlE-95-RCu">
+                                                    <rect key="frame" x="8" y="208" width="304" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="aDP-or-tLs"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2E-vN-KoT">
+                                                    <rect key="frame" x="8" y="229" width="66" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="66" id="BsG-mE-5TW"/>
+                                                        <constraint firstAttribute="height" constant="17" id="nqd-1C-ro9"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27/05/1969" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmZ-0c-0hS">
+                                                    <rect key="frame" x="78" y="229" width="234" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="Hpm-ET-xkr"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SK8-mF-7UC">
+                                                    <rect key="frame" x="8" y="254" width="304" height="146"/>
+                                                    <string key="text">William Henry Gates III is an American business magnate, investor, author, and philanthropist. In 1975, Gates and Paul Allen co-founded Microsoft, which became the world's largest PC software company.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="SK8-mF-7UC" firstAttribute="leading" secondItem="euR-H6-2s2" secondAttribute="leading" constant="8" id="1N3-O6-jeu"/>
+                                            <constraint firstItem="KlE-95-RCu" firstAttribute="leading" secondItem="euR-H6-2s2" secondAttribute="leadingMargin" id="2NP-wo-FMu"/>
+                                            <constraint firstAttribute="trailing" secondItem="SK8-mF-7UC" secondAttribute="trailing" constant="8" id="6gK-e4-HHR"/>
+                                            <constraint firstAttribute="bottom" secondItem="SK8-mF-7UC" secondAttribute="bottom" id="6k5-gQ-X5e"/>
+                                            <constraint firstItem="jmZ-0c-0hS" firstAttribute="top" secondItem="KlE-95-RCu" secondAttribute="bottom" id="Izx-u1-0Ib"/>
+                                            <constraint firstAttribute="trailing" secondItem="T2V-03-vae" secondAttribute="trailing" id="MgP-yq-VZZ"/>
+                                            <constraint firstItem="KlE-95-RCu" firstAttribute="trailing" secondItem="euR-H6-2s2" secondAttribute="trailingMargin" id="NoA-x8-h3V"/>
+                                            <constraint firstItem="KlE-95-RCu" firstAttribute="top" secondItem="T2V-03-vae" secondAttribute="bottom" constant="8" id="VMk-Qo-fjb"/>
+                                            <constraint firstItem="T2V-03-vae" firstAttribute="top" secondItem="euR-H6-2s2" secondAttribute="top" id="ZCJ-e3-6IO"/>
+                                            <constraint firstItem="jmZ-0c-0hS" firstAttribute="leading" secondItem="U2E-vN-KoT" secondAttribute="trailing" constant="4" id="ZVV-e6-PTa"/>
+                                            <constraint firstItem="T2V-03-vae" firstAttribute="leading" secondItem="euR-H6-2s2" secondAttribute="leading" id="eyd-n7-fMF"/>
+                                            <constraint firstItem="jmZ-0c-0hS" firstAttribute="trailing" secondItem="euR-H6-2s2" secondAttribute="trailingMargin" id="fza-lW-lTt"/>
+                                            <constraint firstItem="SK8-mF-7UC" firstAttribute="top" secondItem="jmZ-0c-0hS" secondAttribute="bottom" constant="8" id="tAH-Hw-5lS"/>
+                                            <constraint firstItem="U2E-vN-KoT" firstAttribute="leading" secondItem="euR-H6-2s2" secondAttribute="leadingMargin" id="uaH-r5-i3N"/>
+                                            <constraint firstItem="U2E-vN-KoT" firstAttribute="top" secondItem="KlE-95-RCu" secondAttribute="bottom" id="zux-9t-LUv"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="bioLabel" destination="SK8-mF-7UC" id="agr-1l-qri"/>
+                                            <outlet property="birthdayLabel" destination="jmZ-0c-0hS" id="f79-QY-TQr"/>
+                                            <outlet property="nameLabel" destination="KlE-95-RCu" id="RVq-MZ-ZeE"/>
+                                            <outlet property="photoImageView" destination="T2V-03-vae" id="uEo-du-8dy"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="oy9-0W-z64" id="cap-Ip-7XR"/>
+                                    <outlet property="delegate" destination="oy9-0W-z64" id="faE-yb-aqH"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5SL-QQ-krC" firstAttribute="leading" secondItem="jao-cH-9xe" secondAttribute="leading" id="Uch-pn-GjW"/>
+                            <constraint firstAttribute="trailing" secondItem="5SL-QQ-krC" secondAttribute="trailing" id="YjZ-kt-wv1"/>
+                            <constraint firstItem="5SL-QQ-krC" firstAttribute="top" secondItem="jao-cH-9xe" secondAttribute="top" id="c7U-Y4-lrz"/>
+                            <constraint firstItem="3WC-mG-5QP" firstAttribute="top" secondItem="5SL-QQ-krC" secondAttribute="bottom" id="xnc-PX-xIi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qib-Ba-zif"/>
+                    <connections>
+                        <outlet property="collectionView" destination="5SL-QQ-krC" id="ckT-Ck-M2S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OCd-BD-d0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795.3125" y="-20.5078125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SAV-ke-8Aj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q9p-3n-hK8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UhU-XW-fiy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oy9-0W-z64" kind="relationship" relationship="rootViewController" id="Q2u-WX-jJJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DzO-Zh-6uT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.6875" y="-20.5078125"/>
+        </scene>
+    </scenes>
+</document>
